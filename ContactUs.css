@@ -1,0 +1,97 @@
+.contact-us-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Adjust based on your layout */
+    padding: 20px; /* Add some padding for better mobile view */
+}
+
+.form-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    position: relative;    
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 123%; /* Ensure the form group takes full width */
+}
+
+.form-group label, .form-control, .textarea-control {
+    width: 100%; /* Ensure the labels and controls take full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-control, .textarea-control {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 40px; /* Ensure equal height for input boxes */
+}
+
+.textarea-control {
+    resize: vertical; /* Allow the textarea to expand vertically */
+    min-height: 40px; /* Set a minimum height */
+    max-height: 100px; /* Set a maximum height */
+    overflow-y: hidden; /* Hide the scrollbar */
+    width: 458px;
+}
+.emailarea-control{
+    width: 458px;
+
+}
+
+.textarea-control:focus {
+    height: auto; /* Allow the textarea to expand */
+    min-height: 100px; /* Set a new minimum height when focused */
+   
+}
+
+.submit-button-container {
+    display: flex;
+    justify-content: center; /* Center the submit button */
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Make the button full width */
+    max-width: 200px; /* Limit the button width */
+}
+
+.submit-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.submit-button:hover:enabled {
+    background-color: #0056b3;
+}
+
+.success-message {
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .submit-button {
+        width: 100%;
+    }
+}
